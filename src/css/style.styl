@@ -1,18 +1,28 @@
 @import 'config'
 
-body 
+.container 
     background rgb(255,250,130)
-
-.presentation
     display flex
-    flex-direction column
     justify-content center
     align-items center
     width 100vw
     height 100vh
+.presentation
+   
+    color rgb(25,17,77)
     h1
         font-size 30px
         font-family: Montserrat, sans-serif
-        color rgb(25,17,77)
+        margin 20px 0px
     p
-        color: red
+        margin: 10px 0px
+    a
+        text-decoration: none
+        color: inherit
+        border-bottom: 1px solid rgb(25,17,77)
+        padding 0 0 2px 0
+        transition padding 0.2s 
+        &:hover
+            padding 0 0 4px 0
+            color: grey
+
