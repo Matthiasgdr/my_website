@@ -1,5 +1,39 @@
 @import 'config'
 
+body 
+    font-family: Montserrat, sans-serif
+    color rgb(25,17,77)
+.top-bar
+    position absolute
+    display flex
+    justify-content flex-end
+    top 0
+    left 0
+    width 100%
+    .container-right
+        display flex
+        justify-content center
+        align-items center
+        padding 50px 100px
+        div
+            padding 0 50px
+        p
+            position relative
+            font-weight 600
+            transition: border 0.3s 
+            padding: 0 0 5px 0
+            cursor: pointer
+            &:hover::before
+                height 3px
+            &::before
+                content ''
+                position absolute
+                top 110%
+                left 0
+                width 100%
+                height 0px
+                background rgb(25,17,77)
+                transition height 0.1s
 .container 
     background rgb(255,250,130)
     display flex
@@ -8,8 +42,7 @@
     width 100vw
     height 100vh
 .presentation
-    font-family: Montserrat, sans-serif
-    color rgb(25,17,77)
+    
     h1
         font-size 30px
         margin 20px 0px
